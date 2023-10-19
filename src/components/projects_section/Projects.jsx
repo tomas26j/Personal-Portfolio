@@ -2,27 +2,28 @@ import Project_card from "../project_card/Project_card";
 import first from "./imgs/Rectangle 22.jpg";
 import second from "./imgs/Rectangle 22.png";
 import third from "./imgs/Rectangle 22 (1).png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   // CAMBIAR LA INFO DE LOS PROYECTOS
   const projects = [
     {
       img: first,
-      langs: ["html", "css", "javascript", "react", "tailwind css"],
-      title: "ChertNodes",
-      disc: "Minecraft servers hosting ",
+      langs: ["Javascript", "React", "Tailwind css", "Express.js", "PostgreSQL"],
+      title: "Countries App",
+      disc: "Countries API single web app (SWA)",
     },
     {
       img: second,
-      langs: ["html", "css", "javascript", "Node.js"],
-      title: "ProtectX",
-      disc: "Discord anti-crash bot ",
+      langs: ["Javascript", "React", "Node.js", "Express.js", "PostgreSQL"],
+      title: "Videogames App",
+      disc: "Videogames API single web app (SWA)",
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "python"],
-      title: "Kahoot Answers Viewer",
-      disc: "Get answers to your kahoot quiz ",
+      langs: ["Html & CSS", "Javascript", "React", "Tailwind css"],
+      title: "Sacabollos Quintana",
+      disc: "Car detailing bussines page",
     },
   ];
 
@@ -40,9 +41,9 @@ const Projects = () => {
           </div>
           {/* right */}
           <div className=" text-white font-medium">
-            <a href="projects">
+            <Link to="projects">
               <span>Ver todos ~~&gt;</span>
-            </a>
+            </Link>
           </div>
         </div>
         {/* bottom */}
